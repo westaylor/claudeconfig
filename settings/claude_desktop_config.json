@@ -1,0 +1,11 @@
+{
+  "preferences": {
+    "quickEntryShortcut": {
+      "accelerator": "Alt+Space"
+    },
+    "coworkScheduledTasksEnabled": true,
+    "ccdScheduledTasksEnabled": true,
+    "dockBounceEnabled": true,
+"keepAwakeEnabled": true
+  }
+}
