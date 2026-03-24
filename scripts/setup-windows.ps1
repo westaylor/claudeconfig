@@ -98,16 +98,21 @@ Copy-Item (Join-Path $SettingsDir "claude-code-settings.json") $settingsFile
 # 6. Install plugins
 # -------------------------------------------------------------------
 Write-Info "Installing Claude Code plugins..."
-claude install plugin frontend-design@claude-plugins-official
-claude install plugin superpowers@claude-plugins-official
-claude install plugin claude-md-management@claude-plugins-official
-claude install plugin context7@claude-plugins-official
+Write-Info "Run these inside a Claude Code session (start with 'claude'):"
+Write-Host "  /plugin install frontend-design@claude-plugins-official"
+Write-Host "  /plugin install superpowers@claude-plugins-official"
+Write-Host "  /plugin install claude-md-management@claude-plugins-official"
+Write-Host "  /plugin install context7@claude-plugins-official"
+Write-Host ""
+Write-Info "Or run /plugin to browse and install from the plugin manager UI"
+Write-Host ""
+Write-Info "After installing plugins, run /reload-plugins to activate them"
 
 # -------------------------------------------------------------------
 # 7. Configure statusline from shell prompt
 # -------------------------------------------------------------------
 Write-Info "Configuring statusline..."
-claude /statusline
+Write-Info "Run /statusline inside a Claude Code session to configure your status bar"
 
 # -------------------------------------------------------------------
 # 8. Copy Claude Desktop App preferences

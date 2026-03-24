@@ -90,16 +90,21 @@ sed -i '' "s/__USERNAME__/$(whoami)/g" ~/.claude/settings.json
 # 6. Install plugins
 # -------------------------------------------------------------------
 info "Installing Claude Code plugins..."
-claude install plugin frontend-design@claude-plugins-official
-claude install plugin superpowers@claude-plugins-official
-claude install plugin claude-md-management@claude-plugins-official
-claude install plugin context7@claude-plugins-official
+info "Run these inside a Claude Code session (start with 'claude'):"
+echo "  /plugin install frontend-design@claude-plugins-official"
+echo "  /plugin install superpowers@claude-plugins-official"
+echo "  /plugin install claude-md-management@claude-plugins-official"
+echo "  /plugin install context7@claude-plugins-official"
+echo ""
+info "Or run /plugin to browse and install from the plugin manager UI"
+echo ""
+info "After installing plugins, run /reload-plugins to activate them"
 
 # -------------------------------------------------------------------
 # 7. Configure statusline from shell prompt
 # -------------------------------------------------------------------
 info "Configuring statusline..."
-claude /statusline
+info "Run /statusline inside a Claude Code session to configure your status bar"
 
 # -------------------------------------------------------------------
 # 8. Copy Claude Desktop App preferences

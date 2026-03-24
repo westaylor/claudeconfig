@@ -21,7 +21,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ## Post-Install Steps
 
 1. **Authenticate Claude** - Open the Claude desktop app and sign in with your Anthropic account
-2. **Plugins** - The setup script installs plugins automatically via `claude install plugin`
+2. **Plugins** - Install plugins inside a Claude Code session using `/plugin install` (see below)
 3. **Enable Chrome remote debugging** - Required for the Claude in Chrome MCP server to control your browser:
    - In Chrome, go to `chrome://inspect/#remote-debugging` and check the "Enable remote debugging" box (Chrome 146+)
 4. **Create project CLAUDE.md files** - Use `example-CLAUDE.md` as a template for your own projects
@@ -80,7 +80,18 @@ For a detailed explanation of every setting, see [`settings/code-settings-explai
 
 ## Installed Plugins (Claude Code CLI)
 
-These plugins are installed from the official `anthropics/claude-plugins-official` marketplace:
+Install plugins inside a Claude Code session (`claude`) using:
+
+```
+/plugin install superpowers@claude-plugins-official
+/plugin install frontend-design@claude-plugins-official
+/plugin install context7@claude-plugins-official
+/plugin install claude-md-management@claude-plugins-official
+```
+
+Or run `/plugin` to browse and install from the plugin manager UI. After installing, run `/reload-plugins` to activate.
+
+These plugins are from the official `anthropics/claude-plugins-official` marketplace:
 
 1. **superpowers** - Skills framework (brainstorming, TDD, debugging, planning, etc.)
 2. **frontend-design** - Production-grade frontend/UI design assistance
