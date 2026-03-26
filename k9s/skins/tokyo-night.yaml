@@ -1,0 +1,105 @@
+# -----------------------------------------------------------------------------
+# Tokyo Night skin for k9s
+# Based on https://github.com/enkia/tokyo-night-vscode-theme
+# Variant: Night
+# -----------------------------------------------------------------------------
+
+# Tokyo Night palette
+foreground: &foreground "#c0caf5"
+background: &background "#1a1b26"
+selection: &selection "#283457"
+comment: &comment "#565f89"
+dark: &dark "#16161e"
+blue: &blue "#7aa2f7"
+cyan: &cyan "#7dcfff"
+green: &green "#9ece6a"
+magenta: &magenta "#bb9af7"
+red: &red "#f7768e"
+yellow: &yellow "#e0af68"
+orange: &orange "#ff9e64"
+teal: &teal "#73daca"
+
+k9s:
+  body:
+    fgColor: *foreground
+    bgColor: *background
+    logoColor: *blue
+  prompt:
+    fgColor: *foreground
+    bgColor: *background
+    suggestColor: *magenta
+  info:
+    fgColor: *cyan
+    sectionColor: *foreground
+  dialog:
+    fgColor: *foreground
+    bgColor: *background
+    buttonFgColor: *foreground
+    buttonBgColor: *blue
+    buttonFocusFgColor: *dark
+    buttonFocusBgColor: *cyan
+    labelFgColor: *orange
+    fieldFgColor: *foreground
+  frame:
+    border:
+      fgColor: *selection
+      focusColor: *blue
+    menu:
+      fgColor: *foreground
+      keyColor: *magenta
+      numKeyColor: *magenta
+    crumbs:
+      fgColor: *foreground
+      bgColor: *selection
+      activeColor: *blue
+    status:
+      newColor: *cyan
+      modifyColor: *magenta
+      addColor: *green
+      errorColor: *red
+      highlightColor: *orange
+      killColor: *comment
+      completedColor: *comment
+    title:
+      fgColor: *foreground
+      bgColor: *selection
+      highlightColor: *orange
+      counterColor: *magenta
+      filterColor: *cyan
+  views:
+    charts:
+      bgColor: default
+      defaultDialColors:
+        - *blue
+        - *red
+      defaultChartColors:
+        - *blue
+        - *red
+    table:
+      fgColor: *foreground
+      bgColor: *background
+      cursorFgColor: *dark
+      cursorBgColor: *blue
+      markColor: *yellow
+      header:
+        fgColor: *foreground
+        bgColor: *background
+        sorterColor: *cyan
+    xray:
+      fgColor: *foreground
+      bgColor: *background
+      cursorColor: *selection
+      graphicColor: *blue
+      showIcons: false
+    yaml:
+      keyColor: *magenta
+      colonColor: *comment
+      valueColor: *foreground
+    logs:
+      fgColor: *foreground
+      bgColor: *background
+      indicator:
+        fgColor: *foreground
+        bgColor: *blue
+        toggleOnColor: *green
+        toggleOffColor: *comment
