@@ -93,7 +93,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "APP=\"${TERM_PROGRAM:-Terminal}\"; case \"$APP\" in Apple_Terminal) APP=Terminal;; iTerm.app) APP=iTerm;; vscode) APP=\"Visual Studio Code\";; esac; osascript -e \"tell application \\\"$APP\\\" to display notification \\\"Claude needs permission\\\" with title \\\"Claude Code\\\"\""
+            "command": "APP=\"${TERM_PROGRAM:-Terminal}\"; case \"$APP\" in Apple_Terminal) APP=Terminal;; vscode) APP=\"Visual Studio Code\";; esac; osascript -e \"tell application \\\"$APP\\\" to display notification \\\"Claude needs permission\\\" with title \\\"Claude Code\\\"\""
           }
         ]
       },
@@ -102,7 +102,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "APP=\"${TERM_PROGRAM:-Terminal}\"; case \"$APP\" in Apple_Terminal) APP=Terminal;; iTerm.app) APP=iTerm;; vscode) APP=\"Visual Studio Code\";; esac; osascript -e \"tell application \\\"$APP\\\" to display notification \\\"Claude is waiting for input\\\" with title \\\"Claude Code\\\"\""
+            "command": "APP=\"${TERM_PROGRAM:-Terminal}\"; case \"$APP\" in Apple_Terminal) APP=Terminal;; vscode) APP=\"Visual Studio Code\";; esac; osascript -e \"tell application \\\"$APP\\\" to display notification \\\"Claude is waiting for input\\\" with title \\\"Claude Code\\\"\""
           }
         ]
       },
@@ -111,7 +111,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "APP=\"${TERM_PROGRAM:-Terminal}\"; case \"$APP\" in Apple_Terminal) APP=Terminal;; iTerm.app) APP=iTerm;; vscode) APP=\"Visual Studio Code\";; esac; osascript -e \"tell application \\\"$APP\\\" to display notification \\\"Claude has a question\\\" with title \\\"Claude Code\\\"\""
+            "command": "APP=\"${TERM_PROGRAM:-Terminal}\"; case \"$APP\" in Apple_Terminal) APP=Terminal;; vscode) APP=\"Visual Studio Code\";; esac; osascript -e \"tell application \\\"$APP\\\" to display notification \\\"Claude has a question\\\" with title \\\"Claude Code\\\"\""
           }
         ]
       }
