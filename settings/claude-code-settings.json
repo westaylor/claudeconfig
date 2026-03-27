@@ -101,8 +101,11 @@
         "docker.io",
         "*.docker.io",
         "registry.hub.docker.com",
-        "cgr.dev"
-      ]
+        "cgr.dev",
+        "localhost",
+        "127.0.0.1"
+      ],
+      "allowLocalBinding": true
     }
   }
 }
