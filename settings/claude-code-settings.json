@@ -93,7 +93,15 @@
       "docker"
     ],
     "network": {
-      "allowUnixSockets": ["//var/run/docker.sock"]
+      "allowUnixSockets": [
+        "/var/run/docker.sock"
+      ],
+      "allowedDomains": [
+        "docker.io",
+        "*.docker.io",
+        "registry.hub.docker.com",
+        "cgr.dev"
+      ]
     }
   }
 }
