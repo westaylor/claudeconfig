@@ -94,7 +94,8 @@
     ],
     "network": {
       "allowUnixSockets": [
-        "/var/run/docker.sock"
+        "/var/run/docker.sock",
+        "~/.colima/default/docker.sock"
       ],
       "allowedDomains": [
         "docker.io",
