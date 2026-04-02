@@ -52,6 +52,14 @@
       "Bash(rustc *)",
       "Bash(rustup *)",
       "Bash(docker *)",
+      "Bash(swift build *)",
+      "Bash(swift build)",
+      "Bash(swift run *)",
+      "Bash(swift run)",
+      "Bash(swift test *)",
+      "Bash(swift test)",
+      "Bash(swift package *)",
+      "Bash(xcodebuild *)",
       "WebFetch",
       "Read(~/.claude/plugins/**)",
       "mcp__plugin_context7_context7__*"
@@ -83,7 +91,8 @@
     "frontend-design@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
-    "claude-md-management@claude-plugins-official": true
+    "claude-md-management@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true
   },
   "autoMemoryEnabled": true,
   "sandbox": {
